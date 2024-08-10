@@ -31,9 +31,13 @@ Password Management: Admins can change their password after logging in.
 # Technologies Used
 # Front End
 HTML
+
 CSS
+
 Bootstrap
+
 JavaScript
+
 # Back End
 Python
 Django
