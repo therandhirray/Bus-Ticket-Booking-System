@@ -1,4 +1,4 @@
-#Online Bus Ticket Booking System
+# Online Bus Ticket Booking System
 Project Overview
 The Online Bus Ticket Booking System, named "YatriSafar," is a web-based platform developed using Django. This system enables users to conveniently book, modify, and print bus tickets. It provides an intuitive interface for users to browse available routes, select departure times, and secure seats. The system also allows users to view booking history and cancel or reschedule reservations.
 
