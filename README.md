@@ -40,13 +40,20 @@ JavaScript
 
 # Back End
 Python
+
 Django
+
 SQLite Database
+
 # Tools
 Web Server: Django
+
 Web Browser: Chrome, MS Edge
+
 IDE: VS Code
+
 Hardware: 64-bit Processor, 2.30 GHz, 4 GB RAM
+
 Operating System: MS Windows 7 or Higher
 
 # Project Specifications
@@ -57,25 +64,37 @@ Various testing methodologies were employed to ensure the quality and reliabilit
 
 # Unit Testing: Validates individual components.
 Black Box Testing: Verifies system behavior against specified requirements.
+
 Integration Testing: Checks interactions between modules.
+
 Regression Testing: Ensures new changes don't affect existing functionality.
+
 Performance Testing: Assesses system responsiveness and stability under load.
 
 # Limitations and Future Scope
 
 # Limitations
 Absence of payment gateway integration.
+
 Lack of email verification.
+
 Inability to choose specific seats.
+
 No real-time chat support.
+
 Limited language support.
 
 # Future Scope
 Integrating payment gateway for online transactions.
+
 Enhancing verification methods.
+
 Providing more seat selection options.
+
 Developing a mobile application.
+
 Implementing analytics and reporting tools.
+
 Expanding the platform to include additional travel services such as hotel bookings, tour packages, and car rentals.
 
 # Acknowledgements
