@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Page</title>
+  <style>
+    .map{
+      height: auto;
+      /* background-color: greenyellow; */
+    }
+    .form{
+      height: auto;
+      /* background-color: pink; */
+    }
+    </style>
+  </head>
+  <body>
+    {% include 'app/homenav.html' %}
+    <div class="container-fluid " style="margin-top: 7%;">
+        <div class="row">
+          <!-- Heading Start -->
+          <div class="col-12 col-md-12 col-sm-12 text-warning mb-3">
+            <center><h1><b>Get In Touch</b></h1></center>
+          </div>
+          <!-- Heading End -->
+
+          <!-- Map Start -->
+		      <div class="col-12 col-md-4 col-sm-12 map">
+            <h2 class="text-success text-center mb-4"> <b>Our Location</b></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742902.92108929!2d82.5013602875!3d23.63377289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71110de9f3ac1%3A0xa3ecb51dd68b0969!2sRiiT%20College!5e0!3m2!1sen!2sin!4v1709711666270!5m2!1sen!2sin" width="425" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- Map End -->
+      
+          <!-- Contact Us Form Start -->
+            <div class="col-12 col-md-4 col-sm-12 form">
+                <form>
+                    <h2 class="text-success text-center mb-4"> <b>Contact Us</b></h2>
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">First Name</label>
+                            <input type="text" name="fname"placeholder="Enter first Name" class="form-control mb-1">
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">Middle Name</label>
+                            <input type="text" name="mname"placeholder="Enter middle Name" class="form-control mb-1">
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">Last Name</label>
+                            <input type="text" name="lname"placeholder="Enter last Name" class="form-control mb-1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-sm-12">
+                            <label class="mt-1 mb-1">Phone Number</label>
+                            <input type="number" name="phone"placeholder="Enter Phone " class="form-control mb-1">
+                        </div>
+                        <div class="col-12 col-md-6 col-sm-12">
+                            <label class="mt-1 mb-1">Email-ID</label>
+                            <input type="email" name="email"placeholder="demo@gmail.com" class="form-control mb-1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">Country</label>
+                            <select class="form-control">
+                                <option value="India">India</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="USA">USA</option>
+                                <option value="Chaina">Chaina</option>
+                                <option value="Spain">Spain</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">State</label>
+                            <select class="form-control">
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 col-sm-12">
+                            <label class="mt-1 mb-1">City</label>
+                            <input type="text" name="city"placeholder="Your City " class="form-control mb-1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-dm-12">
+                            <label class="mt-1 mb-1">Address</label>
+                            <input type="text" name="address" placeholder="Address" class="form-control mb-1" style="height:100px; border-radius: 10px;">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3 mb-4" style="width: 200px; margin-left: 120px;">Contact</button>
+                  </form>
+                </div>
+          <!-- Contact Us Form End -->
+
+
+          <!-- Our Head Office Start -->
+          <div class="col-12 col-md-4 col-sm-12 ">
+              <h2 class="text-success text-center mb-4"> <b>Our Head Office</b></h2>
+              <div style="width:425; height:300px; background-color: #F1F1F1;" class="col-12 col-md-12 col-sm-12">
+                  <center><h4 class="text-dark mt-4 pt-5">West Bengal</h4></center>
+                  <p class="text-dark pt-2 px-5 ">YatriSafar India Private Limited
+                    Andal Durgapur Rd,
+                    9th Floor,Old Airport Road,
+                    HAL 2nd Stage, Durgapur Village,
+                    Varthur Hobli, Ward No: 74,
+                    Durgapur, West Bengal - 713201</p>
+              </div>
+          </div>
+          <!-- Our Head Office End -->
+       </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    {% include 'app/homefooter.html' %}
+  </body>
+</html>

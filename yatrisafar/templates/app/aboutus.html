@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YatriSafar | about-us</title>
+        <!-- Bootstrap  Link for CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            .about{
+                margin-top: 100px;
+            }
+            .name{
+                margin-left: -5px;
+                width: 750px;
+            }
+            .name h4{
+                color: rgb(182, 14, 14);
+                font-weight: 500;
+                text-align: left;
+            }
+            .name p{
+                text-align: left;
+                text-align: justify;
+            }
+            .about-us img{
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+                border-radius: 100%;
+                border: 2px solid white;
+            }
+            .paragraph p{
+                font-weight: 100;
+            }
+        </style>
+    </head>
+    <body>
+        {% include 'app/homenav.html' %}
+        <div class="container about col-10 col-md-8 col-sm-8">
+            <!--<div class="row"> -->
+                <div class="col  paragraph">
+                    <center><h1 class="text-warning mb-4" style="font-weight: bold;">About us</h1></center>
+                    <p>YatriSafar is one of the world's largest online bus ticketing
+                        platform that has transformed bus travel by bringing
+                        ease
+                        and
+                        convenience to millions of people who travel using
+                        buses.
+                        Founded in 2006, YatriSafar is part of India’s leading
+                        online
+                        travel
+                        company MakeMyTrip Limited (NASDAQ: MMYT). By providing
+                        widest
+                        choice, superior customer service, lowest prices and
+                        unmatched
+                        benefits, YatriSafar has served over 8 million customers.
+                        YatriSafar
+                        has
+                        a global presence with operations in Peru, Colombia,
+                        India,
+                        Indonesia, Malaysia and Singapore.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container management col-10 col-md-8 col-sm-8">
+            <center><h1 class="text-warning mb-4 mt-4" style="font-weight: bold;">Management Team</h1></center>
+        </div>
+
+        <div class="container text-center  col-10 col-md-10 col-sm-10">
+            <div class=" container row g-2 ">        
+                <div class="col-4 ml-5">
+                    <div class="p-3 about-us">
+                        <img src="/static/img/punit.jpg" alt>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-8 name">
+                    <div class="manage paragraph">
+                        <h4 class=" text-success">Punit Patel, CEO</h4>
+                        <p>Punit Patel has been Chief Executive Officer of
+                            YatriSafar since June 2024. Prior to YatriSafar. He served
+                            as an Executive Vice President of Info Edge India
+                            (Naukri group), heading two group businesses namely
+                            Shiksha.com and Jeevansathi.com. He’s also worked as
+                            General Manager of Marketing and Innovation at
+                            Airtel and has also had multiple roles across
+                            Marketing, Brand Management and Sales at Hindustan
+                            Unilever. Prakash has completed his MBA from IIM
+                            Calcutta and also holds an Honours degree in
+                            Production Engineering from Mumbai University.</p>
+                    </div>
+                </div>
+                <div class="col-4 ml-5">
+                    <div class="p-3 about-us">
+                        <img src="/static/img/Randhir.jpg" alt>
+                    </div>
+                </div>
+                <div class="col-6 name paragraph">
+                    <div class>
+                        <h4 class=" text-success"> Randhir Kumar Ray, CTO</h4>
+                        <p>Randhir Ray serves as Chief Technology Officer at
+                            YatriSafar. Randhir plays an integral role in setting the
+                            company’s strategic direction, development and
+                            future growth. At YatriSafar, he leads effective
+                            delivery of scalable systems to the customers,
+                            agents and bus operators by incorporating the latest
+                            technology. A tech enthusiast, Randhir comes with over
+                            18 years of extensive experience in building
+                            scalable and high-performing products across
+                            telecom, internet and mobile ecommerce domains.
+                            Randhir strongly believes that hard work and
+                            commitment can overcome the barriers to success. He
+                            completed BE in Mechanical Engineering from Madras
+                            University and loves sports, movies, TV and
+                            music.</p>
+                    </div>
+                </div>
+                <div class="col-4 ml-5">
+                    <div class="p-3 about-us">
+                        <img src="/static/img/nitesh.jpg" alt>
+                    </div>
+                </div>
+                <div class="col-6 name paragraph">
+                    <div class>
+                        <h4 class=" text-success"> Nitesh Singh </h4>
+                        <p>Nitesh Singh serves as Bus Conductor at
+                            YatriSafar. Nitesh plays an integral role in setting the
+                            company’s strategic direction, development and
+                            future growth. At redBus, he leads effective
+                            delivery of scalable systems to the customers,
+                            agents and bus operators by incorporating the latest
+                            technology. A tech enthusiast, Nitesh comes with over
+                            18 years of extensive experience in building
+                            scalable and high-performing products across
+                            telecom, internet and mobile ecommerce domains.
+                            Nitesh strongly believes that hard work and
+                            commitment can overcome the barriers to success. He
+                            completed BE in Mechanical Engineering from Madras
+                            University and loves sports, movies, TV and
+                            music.</p>
+                    </div>
+                </div>
+                <div class="col-4 ml-5">
+                    <div class="p-3 about-us">
+                        <img src="/static/img/nitesh.jpg" alt>
+                    </div>
+                </div>
+                <div class="col-6 name paragraph">
+                    <div>
+                        <h4 class=" text-success"> Bikash Thakur </h4>
+                        <p> Bikash Thakur serves as Bus Conductor at
+                            YatriSafar. Bikash plays an integral role in setting the
+                            company’s strategic direction, development and
+                            future growth. At redBus, he leads effective
+                            delivery of scalable systems to the customers,
+                            agents and bus operators by incorporating the latest
+                            technology. A tech enthusiast, Bikash comes with over
+                            18 years of extensive experience in building
+                            scalable and high-performing products across
+                            telecom, internet and mobile ecommerce domains.
+                            Bikash strongly believes that hard work and
+                            commitment can overcome the barriers to success. He
+                            completed BE in Mechanical Engineering from Madras
+                            University and loves sports, movies, TV and
+                            music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'app/homefooter.html' %}
+    </body>
+</html>s

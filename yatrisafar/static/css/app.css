@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    /*background: url("images/bg.jpg") center/cover no-repeat;*/
+    /*background: url("/IMG/background_com.svg") no-repeat;*/
+  }
+
+/* Main Home Banner and Input Search Container r*/
+.home-banner {
+	/* "../" for back to main folder */
+	background-image: url(/static/img/background_com.svg);
+	background-size: cover;
+	background-repeat: round;
+	height: 450px;
+}
+
+.input-search-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 50%;
+}
+
+.inputIcon {
+	position: absolute;
+	left: 5px;
+	font-size: 25px;
+	vertical-align: middle;
+	color: #AAA;
+}
+
+.inputForm {
+	width: 225px;
+	height: 40px;
+	padding-left: 28px;
+}
+
+.inputLabel-default {
+	position: absolute;
+	left: 30px;
+	color: grey;
+	font-weight: 350;
+	font-size: 15px;
+	margin-top: 8px;
+	transition-duration: 0.3s;
+}
+	.inputLabel-focusIn {
+		position: absolute;
+		left: 30px;
+		color: #9b9b9b;
+		font-size: 10px;	
+		margin-top: 1px;
+	}
+
+/* Best Routes Css Start */
+.placecontainer{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh auto;
+    /*padding-bottom: 1px;*/
+  }
+  .placecontainer img{
+    height: 270px;
+    width: 390px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .image {
+    height: 270px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  .image img{
+    object-fit: cover;
+    transition: transform 1.5s;
+    height: 100%;
+  }
+  .image:hover img{
+    transform: scale(1.2);
+  }
+  .placecontainer .text h6{
+    margin-top: 10px;
+    color: #878484;
+  }
+  .placecontainer .text h5{
+    color: black;
+    font-weight: 700;
+  }
+  .placecontainer .row1 h1{
+    font-weight: 600;
+  }
+  .placecontainer .card{
+    border: none;
+    text-align: center;
+  }
+  .placecontainer .row1{
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 30px;
+  }
+  .placecontainer .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .placecontainer .row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+/* Best Routes Css End */
+
+ /* BusStop Section Start */
+  .busstop{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #d0d0cc;
+    width: 84%;
+    height: 303px;
+    border-radius: 30px;
+    margin-top: 60px;
+  }
+  .busstopcard{
+    width: 30%;
+  }
+  .busstopimage{
+    width: 40%;
+  }
+/* BusStop Section End */
+
+/* Cashback Container */
+.cashback-container > div {
+	transition: transform .2s;
+}
+.cashback-container > div:hover {
+	transform: scale(1.05);
+}
+/* Cashback Container */
+
+/* Primo Pic */
+.primo img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+    padding: 0.5rem;
+    margin-bottom: 60px;
+}
+/* Primo Pic */
+
+/* Cellibration Card start */
+.container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /*background-color: #000;*/
+
+}
+.item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #d0d0cc;
+    border-radius: 20px;
+}
+.item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.one img{
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+.two img{
+    padding-top: 30px;
+    width: 300px;
+    padding-bottom: 40px;
+}
+.three img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    width: 180px;
+}
+.container h2{
+    text-align: center;
+    font-weight: 600;
+}
+.container h5{
+    text-align: center;
+}
+/* Cellibration Card End */
+
+
+/* We Promise To Deliver Start */
+/* This part Edit with the Bootstrap */
+/* We Promise To Deliver End */
+
+/* partners section Start*/
+.partners {
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.partner_hdr {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.ptnr_rtc {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ptnr_view {
+    width: 7rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    border: 1px solid #848484;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* place-self: center; */
+}
+.rtc_list {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: nowrap;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+/*.rtc_card p{
+    width: 50px;
+    height: auto;
+    background-color: #7c4686;
+    border: 1px solid #000;
+}*/
+.rtc_card {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.rtc_card > img {
+    width: 6rem;
+    height: 6rem;
+    margin-inline: 0.5rem;
+    /* margin: 0rem 1rem; */
+}
+/* partners section End */

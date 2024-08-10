@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YatriSafar | About</title>
+    <style>
+        #content {
+            margin-top: 120px;
+            padding-bottom: 20px;
+            width: 100%;
+            padding: 0 auto;
+            padding-left: 100px;
+            padding-right: 100px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            color: #000;
+        }
+        .head h1{
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 35px;
+        }
+        #moreContent {
+            display: none;
+        }
+        #readMoreBtn {
+          margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+
+  {% include "app/indexnav.html" %}
+  
+  <!-- About Content Start -->
+    <div id="content">
+        <div class="head">
+          <h1 class=" text-warning">BOOK BUS TICKETS ONLINE</h1>
+        </div>
+        <p>YatriSafar is India's largest brand for online bus ticket booking and offers an easy-to-use online bus ticket booking service, With over 36 million satisfied customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking, YatriSafar makes road journeys super convenient for travelers. A leading platform for booking bus tickets, YatriSafar has been the leader in online bus booking over the past 17 years across thousands of cities and lakhs of routes in India.</p>
+        <p>Booking a bus ticket online on YatriSafar website is very simple. You can also visit YatriSafar.in and enter your source, destination & travel date to check the top-rated bus services available. You can then compare bus prices, user ratings & bus amenities, select your preferred seat, boarding & dropping points and make the payment using multiple payment options like UPI, debit or credit card, net banking and more. With YatriSafar get assured safe & secure payment method...</p>
+        <div id="moreContent" style="display: none;">
+          <p>YatriSafar also offers other exclusive benefits on online bus tickets like flexible ticket reschedule options, easy & friendly cancellation policies, instant payment refund. With live bus tracking feature, you can plan your travel and never miss the bus. You can get the cheapest bus tickets by availing the best discounts for new & existing customers. With redDeals, you can also get exclusive & additional discounts on your online bus ticket booking. You will get 24X7 customer support on call, chat & help to resolve all your queries in English & local languages.</p>
+          <p>YatriSafar offers Primo bus services which are specially curated by YatriSafar with highly-rated buses with best-in-class service. With Primo by YatriSafar, you can be assured of safe, comfortable & on-time bus service at no additional cost. With multiple boarding & dropping points available across all major cities in India, you can select as per your convenience and enjoy a smooth travel experience.</p>
+          <p>YatriSafar operates in 6 countries including India, Malaysia, Singapore, Indonesia, Peru, and Colombia and has sold over 220 million bus tickets worldwide through the YatriSafar website . With over 36 million satisfied customers. YatriSafar is committed to providing a world-class online bus booking experience to its users.</p>
+          <p>YatriSafar offers bus tickets from some of the top private bus operators like Orange Travels, VRL Travels, SRS Travels, Chartered Bus, Praveen Travels and state government bus operators like APSRTC, TSRTC, MSRTC, GSRTC, Kerala RTC, TNSTC, RSRTC, UPSRTC, KSRTC Karnataka and more. With YatriSafar, customers have the flexibility of booking bus tickets of different bus types like AC/non-AC, Sleeper, Seater, Volvo, Multi-axle, AC Sleeper, Electric buses and more.</p>
+        </div>
+        <button id="readMoreBtn" onclick="toggleContent()">Read more</button>
+    </div>
+
+    {% include "app/indexfooter.html" %}
+      
+    <script>
+        function toggleContent() {
+          var moreContent = document.getElementById("moreContent");
+          var btnText = document.getElementById("readMoreBtn");
+          if (moreContent.style.display === "none") {
+            moreContent.style.display = "block";
+            btnText.innerHTML = "Read less";
+          } else {
+            moreContent.style.display = "none";
+            btnText.innerHTML = "Read more";
+          }
+        }
+    </script>  
+    <!-- About Content End -->
+</body>
+</html>

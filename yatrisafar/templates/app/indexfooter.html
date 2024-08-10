@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css Link Of Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        footer{
+            background-color: #F2F2F2;
+        }
+        footer img{
+            width: 80px;
+            height: 100px;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+        footer p{
+            font-size: 0.9rem;
+            color: #000;
+            text-align: justify;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+        footer h5{
+            /*color: #ffc107;*/
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer li{
+            font-size: 1rem;
+            color: #000;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            list-style-type: none;
+            cursor: pointer;
+            /*margin-bottom: 5px;*/
+        }
+        footer a{
+            text-decoration: none;
+            color: #000;
+        }
+        footer ul{
+            justify-content: left;
+            /*align-items: left;*/
+            text-align: left;
+            padding-left: 80px;
+            padding-top: 10px;
+        }
+        footer li{
+            list-style-type: none;
+            margin-bottom: 5px;
+            font-size: 17px;
+            /*font-weight: 600;*/
+        }
+        footer a:hover{
+            color: #ffc107;
+        }
+        .fab{
+            font-size: 1.2rem;
+            color: #000;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .fa-facebook{
+            color: #3b5998;
+        }
+        .fa-linkedin{
+            color: #0077B5;
+        }
+        .fa-instagram{
+            color: #833AB4;
+        }
+        .fa-github{
+            color: #24292e;
+        }
+    </style>
+</head>
+<body>
+    <footer class="p-4">
+        <div class="container-fliuid">
+            <div class="row">
+                
+                <!-- First Div: Company Image and Paragraph -->
+                <div class="col-lg-4 center p-4 me-5">
+                    <img src="/static/img/log.jpg" alt="Company Logo" class="img-fluid mb-3 justify-content-center d-flex mx-auto d-block rounded-circle" title="YatriSafar">
+                    <p>YatriSafar is the India's largest online bus ticket booking service trusted by over 25 million happy customers globally.
+                        YatriSafar offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+                </div>
+                
+                <!-- Second Div: Chat with Us and Social Media Icons -->
+                <div class="col-lg-2 me-3">
+                    <h5>Chat with Us</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="https://www.facebook.com/therandhirray" target="_blank"><i class="fab fa-facebook  mb-2"></i> Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/in/therandhirray" target="_blank"><i class="fab fa-linkedin mb-2"></i> Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/therandhirray" target="_blank"><i class="fab fa-instagram mb-2"></i> Instagram</a></li>
+                        <li><a href="https://github.com/therandhirray" target="_blank"><i class="fab fa-github mb-2"></i> Github</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Div: Links -->
+                <div class="col-lg-2 me-4">
+                    <h5>About YatriSafar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Fourth Div: Links -->
+                <div class="col-lg-2 ">
+                    <h5>Our Best Routes</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Kolkata</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Jaypur</a></li>
+                        <li><a href="#">Kashmir</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

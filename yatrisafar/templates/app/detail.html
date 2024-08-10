@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YatriSafar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+  
+    <!-- Google Fonts Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <style>
+      @media print {
+        .noPrint{
+            display:none;
+      }
+      }
+      .noPrint{
+        background-color: rgb(239, 202, 16);
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+        border: none;
+      }         
+      .btn{
+        letter-spacing: 0.2rem;
+      }                
+    </style>
+  </head>
+  <body>
+    {% include 'app/homenav.html'%}
+    <br><br><br>
+    <!-- The Model -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+          <!-- Modal Header -->
+            <div class="modal-header  col-md-12 justify-content-center text-warning">
+                <center><h2 class="modal-title" style="font-weight: bold;">Ticket Information</h2></center>
+            </div>
+  
+            <!-- Modal body -->
+            <div class="modal-body-fluid">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Booking ID:</b> {{l.id}}</li>
+                    <li class="list-group-item flush"><b>Bus name:</b> {{l.bus_name}}</li>
+                    <li class="list-group-item"><b>Starting point:</b> {{l.source}}</li>
+                    <li class="list-group-item"><b>Destination point:</b> {{l.dest}}</li>
+                    <li class="list-group-item"><b>Number of seats:</b> {{l.nos}}</li>
+                    <li class="list-group-item"><b>Price:</b> {{l.price}}</li>
+                    <li class="list-group-item"><b>Cost:</b> {{l.cost}}</li>
+                    <li class="list-group-item"><b>Date:</b> {{l.date}}</li>
+                    <li class="list-group-item"><b>Time:</b> {{l.time}}</li>
+                </ul>
+            </div>
+  
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button onclick="window.print();" class="noPrint">Print</button>
+                <a href="/seebookings/"><button type="button" class="btn btn-success" data-dismiss="modal">Back</button></a>
+            </div>
+        </div>
+    </div>
+
+    {% include "app/homefooter.html" %}
+    
+    <!-- Adding Bootstrap CDN - jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Adding Bootstrap CDN - Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Adding Bootstrap CDN - Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Adding JavaScript -->
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    
+    
+  
+  
+  <!--
+  Link to Gallery of all Images: https://postimg.cc/gallery/oazy3484/
+  
+  Page URL: https://postimg.cc/gallery/oazy3484/96b90fd4/
+  -->
+  
+  
+  
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+  </body>
+  </html>
+  

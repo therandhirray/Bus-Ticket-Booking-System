@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YatriSafar | Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/js/app.js">
+</head>
+<body>
+  {% include 'app/homenav.html'%}
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <center><h2 class="text-warning mt-5"><b>How Can i Help You?</b></h2></center>
+        
+        <!-- For Heading  Start-->
+        <div class="row mt-4 mb-3">
+          <div class="col-md-4  text-success">
+            <h2 style="padding-left: 60%;"><i class="fa fa-phone" aria-hidden="true"></i><b> Calling</b></h2>
+          </div>
+          <div class="col-md-4 justify-content-center text-dark">
+            <center><h3><b>OR</b></h3></center>
+          </div>
+          <div class="col-md-4 text-success">
+            <h2><i class="fa fa-envelope" aria-hidden="true"></i><b> Send Message</b></h2>
+          </div>
+      </div>
+        <!-- For Heading End  -->
+
+        <!-- For Calling Start -->
+        <div class="col-md-6">
+          <img src="/static/img/help.jpg" class="img-fluid" alt="Help Image" >
+          <center><h3 class="text-warning mb-3"><b>24/7 Customer Support </b></h3></center>
+          <center><h4><b><i class="fa fa-phone" aria-hidden="true"></i> Dial Now: +91-9933374911 </b></h4></center>
+        </div>
+        <!-- For Calling End -->
+
+        <!-- For Message Start -->
+        <div class="col-md-6">
+          <img src="/static/img/Send_mail1.jpg" alt="Send messege" class="img-fluid" style="height: 450px; padding-left: 40px;">
+          <center><h3 class="text-warning mt-4"><b>24/7 Always With You </b></h3></center>
+          <div class="col-md-4">
+            <a href="mailto:randhirray166@gmail.com" class="btn btn-success  btn-block" style="margin-left: 100%; margin-top: 15px; margin-bottom: 30px;">Send Mail</a>
+          </div>
+        </div>
+        <!-- For Message End -->    
+    </div>
+</div>
+
+  {% include "app/homefooter.html" %}
+
+</body>
+</html>

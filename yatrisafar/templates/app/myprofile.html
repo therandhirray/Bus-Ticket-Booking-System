@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 120px;
+        }
+        .profile-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-heading h1 {
+            border-radius: 20px;
+            box-shadow: 0 9px 6px rgba(0,0,0,0.1);
+            color: #dc3545;
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+        .profile-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 9px 6px rgba(0,0,0,0.1);
+        }
+        .profile-card h2 {
+            color: #dc3545;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .profile-info label {
+            font-weight: 800;
+        }
+        .booking-history-table {
+            margin-top: 30px;
+        }
+        .change-password-form,
+        .update-profile-form {
+            margin-top: 30px;
+        }
+        .logout-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+{% include 'app/homenav.html' %}
+<div class="profile-container">
+    <div class="profile-heading">
+        <h1 class="text-warning">User Profile</h1>
+    </div>
+    
+    <div class="profile-card mb-4">
+        <h2 class="text-success font-weight-bold">Profile Information</h2>
+        <div class="profile-info">
+            <label for="name">Name:</label>
+            <p>{{ user.username }}</p>
+        </div>
+        <div class="profile-info">
+            <label for="email">Email:</label>
+            <p>{{ user.email }}</p>
+        </div>
+        <div class="profile-info">
+            <label for="phone">Phone:</label>
+            <p>+91 9933374911</p>
+        </div>
+        <!--<button class="btn btn-warning edit-btn">Edit</button>-->
+    </div>
+
+    <!-- Model Here for Edit Button  -->
+
+    <!-- Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Edit profile form -->
+                <form id="editProfileForm">
+                    <div class="mb-3">
+                        <label for="editName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="editName" value="{{ user.username }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editEmail" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="editEmail" value="{{ user.email }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPhone" class="form-label">Phone:</label>
+                        <input type="tel" class="form-control" id="editPhone" value="+91 9933374911">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Model Here for Change Password -->
+
+
+    <!--<div class="profile-card change-password-form">
+        <h2 class="text-success font-weight-bold">Change Password</h2>
+        <form>
+            <div class="mb-3">
+                <label for="currentPassword" class="form-label">Current Password</label>
+                <input type="password" class="form-control" id="currentPassword" required>
+            </div>
+            <div class="mb-3">
+                <label for="newPassword" class="form-label">New Password</label>
+                <input type="password" class="form-control" id="newPassword" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Change Password</button>
+        </form>
+    </div>-->
+
+    <!--<div class="profile-card update-profile-form mb-4">
+        <h2 class="text-success font-weight-bold">Update Profile</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Update Profile</button>
+        </form>
+    </div>-->
+
+    <!--<div class="profile-card logout-btn">
+        <a href="#" class="btn btn-danger">Logout</a>
+    </div>-->
+
+</div>
+
+<!-- Java Script For Model  -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const editBtn = document.querySelector('.edit-btn');
+        const editProfileForm = document.querySelector('#editProfileForm');
+        const editNameInput = document.querySelector('#editName');
+        const editEmailInput = document.querySelector('#editEmail');
+        const editPhoneInput = document.querySelector('#editPhone');
+
+        editBtn.addEventListener('click', function () {
+            $('#editProfileModal').modal('show');
+        });
+
+        editProfileForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const newName = editNameInput.value.trim();
+            const newEmail = editEmailInput.value.trim();
+            const newPhone = editPhoneInput.value.trim();
+
+            // Update profile information (you can use AJAX to send the updated information to the server)
+            console.log('New Name:', newName);
+            console.log('New Email:', newEmail);
+            console.log('New Phone:', newPhone);
+
+            $('#editProfileModal').modal('hide');
+        });
+    });
+</script>
+
+
+<!-- Java Script For Model -->
+
+{% include 'app/homefooter.html' %}
+</body>
+</html>
